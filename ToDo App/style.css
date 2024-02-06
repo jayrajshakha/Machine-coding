@@ -1,0 +1,17 @@
+.btn {
+    background: red;
+    color: white;
+    display: block;
+    padding: 10px;
+    margin: 30xp;
+    width: 46px;
+}
+.li{
+    margin-bottom: 20px;
+    
+
+}
+
+.done {
+    text-decoration: line-through;
+}
