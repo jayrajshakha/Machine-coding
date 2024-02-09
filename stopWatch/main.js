@@ -1,32 +1,45 @@
 
-const h = document.getElementById('heading');
 
-let timer = null;
+const display = document.getElementById('display');
 
-let counter = 1;
-function watch() {
-     counter++;
-     if (counter == 11) {
-          counter = 0;
-     }
-     h.textContent = counter;
-}
-function reverceWatch() {
-     counter--;
-     if (counter == 0) {
-          counter = 10;
-     }
-     h.textContent = counter;
+let hour = 0;
+let min = 0;
+let sec = 0;
+
+let timer = null
+
+
+
+
+
+function starter() {
+    sec++;
+    if (sec >= 60) {
+        min++;
+        sec = 0
+        if (min >= 60) {
+            hour++;
+            min = 0;
+        }
+    }
+
+    display.innerText = `${hour < 10 ? '0' + hour : hour} : ${min < 10 ? '0' + min : min} : ${sec < 10 ? '0' + sec : sec}`;
+
 }
 
-function start() {
-     timer = setInterval(watch, 1000);
+const start = () => {
+    timer = setInterval(starter, 1000);
+}
 
+const stop = () => {
+    clearInterval(timer);
 }
-function stop() {
-     clearInterval(timer)
-}
-function reverce() {
-     timer = setInterval(reverceWatch, 1000);
+
+const restart = () => {
+
+    hour = 0;
+    min = 0;
+    sec = 0;
+
 
 }
