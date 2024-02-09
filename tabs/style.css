@@ -1,0 +1,36 @@
+button {
+  margin: 10px;
+  padding: 6px;
+  background: greenyellow;
+  outline: none;
+  border: 0;
+  border-radius: 4px;
+  width: 100px;
+  cursor: pointer;
+}
+button:hover {
+  background: rgb(171, 239, 69);
+  scale: 1.1;
+}
+
+p {
+  background: #000;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 8px;
+  color: white;
+  width: 30%;
+  cursor: pointer;
+}
+
+span {
+  font-weight: 700;
+  color: #8faeff;
+  display: block;
+  margin: 10px 0 10px 0;
+}
+
+button:active {
+  background: rgb(0, 2, 11);
+  color: white;
+}
