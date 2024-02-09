@@ -1,0 +1,16 @@
+#del {
+     background: red;
+     border-radius: 3px;
+     padding: 4px;
+     margin: 5px;
+     color: white;
+}
+
+li {
+    margin: 10px;
+
+}
+
+.done {
+       text-decoration: line-through;
+}
