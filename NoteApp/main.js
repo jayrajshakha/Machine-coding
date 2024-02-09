@@ -18,8 +18,10 @@ document.addEventListener('DOMContentLoaded',() => {
 ul.addEventListener('click', (e) => {
       if(e.target.tagName == 'SPAN'){
          e.target.parentNode.remove()
+         localStorage.setItem('data', ul.innerHTML)
       } 
       else if(e.target.tagName == 'LI'){
             e.target.classList.toggle('done')
+            localStorage.setItem('data', ul.innerHTML)
       }
 })
