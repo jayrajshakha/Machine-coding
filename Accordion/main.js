@@ -1,5 +1,7 @@
 
 
+document.body.contentEditable = 'true';
+
 const jay = document.getElementById('jay');
 const heer = document.getElementById('heer');
 const veer = document.getElementById('dev');
