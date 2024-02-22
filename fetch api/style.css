@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.main {
+    background: #920029;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
